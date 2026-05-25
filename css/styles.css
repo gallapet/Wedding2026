@@ -1,0 +1,134 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #faf7f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)),
+                url("../images/header.jpg") center/cover no-repeat;
+}
+
+header h1 {
+    font-family: "Sacramento", cursive;
+    font-size: 3.5rem;
+    color: #ce455a;
+}
+
+header h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+header p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+
+/* Navigation */
+nav.links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav.links a:hover {
+    color: #ce455a;
+}
+
+/* Sections */
+section {
+    padding: 4rem 1.5rem;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+section h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ce455a;
+}
+
+/* Order of the Day cards */
+#order div {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+#order div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+#order h3 {
+    font-family: "Merriweather", serif;
+    color: #444;
+}
+
+/* Venue */
+#venue {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+/* RSVP */
+#rsvp {
+    background-color: #f3eaea;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    nav.links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
