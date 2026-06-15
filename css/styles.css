@@ -13,29 +13,58 @@ body {
 }
 
 /* Header */
-header {
+.hero {
+    height: 100vh;
+    background: url("../images/header.jpg") center 60%/cover no-repeat;
+}
+
+.hero-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 3rem;
     text-align: center;
-    padding: 4rem 1rem;
-    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.9)),
-                url("../images/header.jpg") center/cover no-repeat;
+}
+
+.hero-top,
+.hero-bottom {
+    align-self: center;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+
+.hero-top {
+    backdrop-filter: blur(5px);
+    background: rgba(254, 254, 254, 0.7);
+}
+
+.hero-bottom {
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,1);
+    backdrop-filter: blur(1px);
+    background: rgba(254, 254, 254, 0.3);
 }
 
 header h1 {
     font-family: "Sacramento", cursive;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #ce455a;
 }
 
 header h2 {
     font-family: "Merriweather", serif;
     font-size: 2rem;
-    margin-top: 0.5rem;
+}
+
+header h3 {
+    letter-spacing: 0.2rem;
 }
 
 header p {
-    margin-top: 1rem;
+    font-family: "Merriweather", serif;
     font-size: 1.1rem;
-    letter-spacing: 2px;
 }
 
 /* Navigation */
@@ -77,20 +106,41 @@ section h2 {
     color: #ce455a;
 }
 
-/* Order of the Day cards */
-#order div {
-    background: white;
-    padding: 1.5rem;
-    margin: 1rem 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.2s;
+.about-container,
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#order div:hover {
+.about-text, 
+.order-text {
+    flex: 1;
+    text-align: left;
+}
+
+.about-image img,
+.order-image img {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.order-text {
+    text-align: right;
+}
+
+/* #order div:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-}
+} */
 
 #order h3 {
     font-family: "Merriweather", serif;
@@ -99,7 +149,6 @@ section h2 {
 
 /* Venue */
 #venue {
-    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -118,7 +167,7 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     header h1 {
         font-size: 2.5rem;
     }
@@ -130,5 +179,23 @@ footer {
     nav.links {
         flex-wrap: wrap;
         gap: 1rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+    
+    .order-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .order-text {
+        text-align: center;
     }
 }

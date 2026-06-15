@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,21 @@
     <title>Sophie & Peter 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <h1>We're Getting Married!</h1>
-        <h2>Sophie and Peter</h1>
-        <p>01/10/2026</p>
+    <header class="hero">
+        <div class="hero-text">
+            <div class="hero-top">
+                <h1>We're Getting Married!</h1>
+            </div>
+            <div class="hero-bottom">
+                <h2>Sophie and Peter</h2>
+                <h3>01/10/2026</h3>
+            </div>
+        </div>
     </header>
 
     <nav class="links">
@@ -29,13 +35,28 @@
         <a href="#rsvp">RSVP</a>
     </nav>
 
-    <section id="about">
-        <h2>Our Story</h2>
-        <p>TODO</p>    
+    <section id="about" class="about-container">
+        <div class="about-text">
+            <h2>Our Story</h2>
+            <p>TODO</p>
+        </div>
+        <div class="about-image">
+            <img src="images/header_photo.jpg" alt="Sophie and Peter" />
+        </div>
     </section>
 
-    <section id="order">
-        <h2>Order of the Day</h2>
+    <section id="order" class="order-container">
+        <div class="order-image">
+            <img src="images/header_photo.jpg" alt="Sophie and Peter" />
+        </div>
+        <div class="order-text">
+            <h2>Order of the Day</h2>
+            <p>TODO</p>
+        </div>
+    </section>
+
+    <section id="venue">
+        <h2>Venues</h2>
         <div>
             <h3>The Ceremony</h3>
             <p>Queen's Park Baptist Church, 20 Balvicar Drive, G42 8QS</p>
@@ -46,12 +67,6 @@
         </div>
     </section>
 
-    <section id="venue">
-        <h2>Venue</h2>
-        <p>Queen's Park Baptist Church, 20 Balvicar Drive, G42 8QS</p>
-        <p>Crossbasket Castle, Stoneymeadow Road, G72 9UE</p>
-    </section>
-
     <section id="rsvp">
         <h2>RSVP</h2>
     </section>
@@ -60,4 +75,5 @@
         <p>Website by Peter Gallacher. If you don't like it, blame Sophie</p>
     </footer>
 </body>
+
 </html>
