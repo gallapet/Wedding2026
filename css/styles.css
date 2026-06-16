@@ -15,7 +15,7 @@ body {
 /* Header */
 .hero {
     height: 100vh;
-    background: url("../images/header.jpg") center 60%/cover no-repeat;
+    background: url("../images/header.webp") center 60%/cover no-repeat;
 }
 
 .hero-text {
