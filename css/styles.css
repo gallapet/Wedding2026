@@ -140,9 +140,17 @@ section h2 {
     text-align: right;
 }
 
+.reverse {
+    flex-direction: row-reverse;
+}
+
 /* Venue */
 #venue {
     border-radius: 10px;
+}
+
+.venue-card + .venue-card {
+    margin-top: 1rem;
 }
 
 /* RSVP */

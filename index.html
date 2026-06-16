@@ -29,11 +29,13 @@
     </header>
 
     <nav class="links">
-        <a href="#home">Home</a>
+        <a href="#about">Home</a>
         <a href="#about">Our Story</a>
         <a href="#order">Order of the Day</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#venue">Venues</a>
         <a href="#rsvp">RSVP</a>
+        <a href="#faq">FAQs</a>
+        <a href="#registry">Registry</a>
     </nav>
 
     <section id="about" class="about-container">
@@ -59,10 +61,7 @@
         </div>
     </section>
 
-    <section id="order" class="order-container">
-        <div class="order-image">
-            <img src="images/header_photo.webp" alt="Sophie and Peter" />
-        </div>
+    <section id="order" class="order-container reverse">
         <div class="order-text">
             <h2>Order of the Day</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
@@ -80,20 +79,56 @@
                 hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos
                 himenaeos.</p>
         </div>
+        <div class="order-image">
+            <img src="images/header_photo.webp" alt="Sophie and Peter" />
+        </div>
     </section>
 
     <section id="venue" class="venue-container">
         <div class="venue-text">
-            <div>
+            <div class="venue-card">
                 <h2>Venues</h2>
                 <h3>The Ceremony</h3>
                 <p>Queen's Park Baptist Church, 20 Balvicar Drive, G42 8QS</p>
+                <details>
+                    <summary>Directions</summary>
+                    <div class="directions-content">
+                        <p>Queen's Park Baptist Church is located on Glasgow's south side, right next to Queen's Park.
+                        </p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.6174487161015!2d-4.272861923113287!3d55.8345990231146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846f40490fcaf%3A0x64b5b0d61c45b457!2sQueen%E2%80%99s%20Park%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1781603361371!5m2!1sen!2suk"
+                            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>
+                            <a href="https://maps.app.goo.gl/ZcSbMLYhwY4S6o4R9" target="_blank">
+                                Open in Google Maps
+                            </a>
+                        </p>
+                    </div>
+                </details>
             </div>
-            <div>
+            <div class="venue-card">
                 <h3>The Reception</h3>
                 <p>Crossbasket Castle, Stoneymeadow Road, G72 9UE</p>
+                <details>
+                    <summary>Directions</summary>
+                    <div class="directions-content">
+                        <p>Crossbasket Castle is approximately 25 minutes from Glasgow city centre.</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.5714971999755!2d-4.1355626285076355!3d55.78331368817543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888407134657b59%3A0xb7ec8212dfd50456!2sCrossbasket%20Castle%2C%20Stoneymeadow%20Rd%2C%20East%20Kilbride%2C%20Glasgow%20G72%209UE!5e0!3m2!1sen!2suk!4v1781603435917!5m2!1sen!2suk"
+                            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>
+                            <a href="https://maps.app.goo.gl/3fHRNoUrYGM2vCpt5" target="_blank">
+                                Open in Google Maps
+                            </a>
+                        </p>
+                    </div>
+                </details>
             </div>
+
         </div>
+
         <div class="venue-image">
             <img src="images/header_photo.webp" alt="Sophie and Peter" />
         </div>
@@ -101,6 +136,8 @@
 
     <section id="rsvp">
         <h2>RSVP</h2>
+        <p>Please RSVP by XX/XX/XXXX</p>
+        <p>Any issues with this form please contact us at sophieandpeter2026@gmail.com</p>
         <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScDCWEOTiI0K1v9KAcBaiCf4Sg5BOT5iVZvVq06GQQPpK5IOA/viewform?embedded=true"
             width="640" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
