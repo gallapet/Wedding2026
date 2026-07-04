@@ -136,18 +136,19 @@ section h2 {
 }
 
 .about-image img,
-.order-image img,
-.venue-image img {
-    width: auto;
+.order-image img {
+    width: 500px;
     max-width: 600px;
     height: auto;
+    max-height: 500px;
+    object-fit: cover;
 
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .order-text {
-    text-align: right;
+    text-align: center;
 }
 
 .reverse {
@@ -161,6 +162,30 @@ section h2 {
 
 .venue-card + .venue-card {
     margin-top: 1rem;
+}
+
+.venue-image {
+  position: relative;
+  width: 500px;
+  height: 350px;
+}
+
+.venue-image img {
+  position: absolute;
+  width: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.venue-image img:first-child {
+  top: 0;
+  left: 0;
+}
+
+.venue-image img:last-child {
+  top: 80px;
+  left: 250px;
 }
 
 /* RSVP */
