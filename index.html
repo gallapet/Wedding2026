@@ -47,21 +47,24 @@
                 never imagining that years later our paths would cross again in the most unexpected way.
             </p>
             <p>
-                Fast forward to adulthood, when Peter decided to take a chance and slid into Sophie’s DMs. 
+                Fast forward to adulthood, when Peter decided to take a chance and slid into Sophie’s DMs.
                 What started as a simple message quickly turned into something special.
-                We went on our first date the day before Peter flew to Italy for two weeks on holiday. 
-                Most people would have expected the timing to fizzle out the spark, but if anything, it only made us realise how excited we were to see each other again.
+                We went on our first date the day before Peter flew to Italy for two weeks on holiday.
+                Most people would have expected the timing to fizzle out the spark, but if anything, it only made us
+                realise how excited we were to see each other again.
             </p>
             <p>
-                From that moment on, we’ve been inseparable, making memories, sharing adventures, and building a life together.
+                From that moment on, we’ve been inseparable, making memories, sharing adventures, and building a life
+                together.
             </p>
             <p>
                 One of our favourite places has always been Lochgoilhead, where we enjoyed our first day trip together.
-                It became even more special when Peter got down on one knee and asked Sophie to marry him in the very same place.
+                It became even more special when Peter got down on one knee and asked Sophie to marry him in the very
+                same place.
             </p>
             <p>
                 Now, we’re so excited to celebrate the next chapter of our story with all of the people we love most.
-                 Thank you for being part of our journey — we can’t wait to celebrate with you!
+                Thank you for being part of our journey — we can’t wait to celebrate with you!
             </p>
         </div>
         <div class="about-image">
@@ -85,7 +88,7 @@
             <h3>22:00</h3>
             <p>Evening Buffet</p>
             <h3>00:00</h3>
-            <p>End of Wedding   </p>
+            <p>End of Wedding </p>
         </div>
         <div class="order-image">
             <img src="images/order_of_the_day.jpg" alt="Sophie and Peter in front of Crossbasket Castle" />
@@ -145,12 +148,66 @@
 
     <section id="rsvp">
         <h2>RSVP</h2>
-        <p>Please RSVP by XX/XX/XXXX</p>
-        <p>If you have any issues with this form please contact us at <a href="mailto:sophieandpeter2026@gmail.com">sophieandpeter2026@gmail.com</a></p>
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScDCWEOTiI0K1v9KAcBaiCf4Sg5BOT5iVZvVq06GQQPpK5IOA/viewform?embedded=true"
-            width="640" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <p>Please RSVP by 17/08/2026</p>
+        <p>If you have any issues with this form please contact us at <a
+                href="mailto:sophieandpeter2026@gmail.com">sophieandpeter2026@gmail.com</a></p>
+        <p>Please enter the password provided at the bottom of your invitation.</p>
+        <div id="password-section">
+        <input
+            type="password"
+            id="form-password"
+            placeholder="Enter Password"
+        >
+        <button type="button" onclick="showRSVPForm()">
+            Submit
+        </button>
+
+        <p id="password-error" style="color:red;"></p>
+    </div>
+
+    <div id="form-container"></div>
     </section>
+
+    <script>
+        const forms = {
+            "love": {
+                url: "https://docs.google.com/forms/d/e/1FAIpQLScDCWEOTiI0K1v9KAcBaiCf4Sg5BOT5iVZvVq06GQQPpK5IOA/viewform?usp=dialog",
+                height: 950
+            },
+
+            "party": {
+                url: "https://docs.google.com/forms/d/e/1FAIpQLScDtYHZL8-l_xmRu7NPZrHyerIQ8QlICWshz4O8hl-dwBjbbA/viewform?usp=publish-editor",
+                height: 950
+            }
+        };
+
+        function showRSVPForm() {
+
+            const password = document.getElementById("form-password").value.trim();
+            const form = forms[password];
+
+            if (!form) {
+                document.getElementById("password-error").textContent =
+                    "Incorrect password. Please enter the password provided on your invitation.";
+                return;
+            }
+
+            document.getElementById("password-error").textContent = "";
+            document.getElementById("password-section").style.display = "none";
+
+            document.getElementById("form-container").innerHTML = `
+        <iframe
+            src="${form.url}"
+            width="640"
+            height="${form.height}"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+            Loading…
+        </iframe>
+    `;
+        }
+    </script>
 
     <footer>
         <p>Website by Peter Gallacher. If you don't like it, blame Sophie</p>
