@@ -2,7 +2,7 @@ const guestTypes = {
     love: {
         type: "day",
         formUrl: "https://docs.google.com/forms/d/e/1FAIpQLScDCWEOTiI0K1v9KAcBaiCf4Sg5BOT5iVZvVq06GQQPpK5IOA/viewform?usp=dialog",
-        formHeight: 950
+        formHeight: 1200
     },
 
     party: {
