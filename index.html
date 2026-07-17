@@ -14,9 +14,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
         rel="stylesheet" />
     <link rel="preload" as="image" href="images/header.webp">
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
+    <body class="locked">
+
+    <div id="guest-login" class="guest-login">
+        <div class="guest-login-card">
+            <h2>Welcome</h2>
+            <p>Please enter the password shown on your invitation.</p>
+
+            <input
+                type="password"
+                id="guest-password"
+                placeholder="Enter password"
+                autocomplete="off"
+            >
+
+            <button type="button" id="guest-login-button">
+                Enter Website
+            </button>
+
+            <p id="guest-password-error" class="password-error"></p>
+        </div>
+    </div>
+
+    <div id="website-content" hidden>
     <header class="hero">
         <div class="hero-text">
             <div class="hero-top">
@@ -79,12 +103,18 @@
             <p>Arrive at Wedding Ceremony</p>
             <h3>13:30</h3>
             <p>Bride Arrival</p>
-            <h3>16:00</h3>
-            <p>Drink's Reception/Photos</p>
-            <h3>17:00</h3>
-            <p>Wedding Breakfast</p>
-            <h3>19:00</h3>
+            <div class="day-guest-info">
+                <h3>15:30</h3>
+                <p>Drinks Reception/Photos</p>
+                <h3>17:00</h3>
+                <p>Speeches</p>
+                <h3>17:30</h3>
+                <p>Wedding Breakfast</p>
+            </div>
+            <h3>19:30</h3>
             <p>Evening Reception</p>
+            <h3>20:00</h3>
+            <p>First Dance</p>
             <h3>22:00</h3>
             <p>Evening Buffet</p>
             <h3>00:00</h3>
@@ -151,21 +181,7 @@
         <p>Please RSVP by 17/08/2026</p>
         <p>If you have any issues with this form please contact us at <a
                 href="mailto:sophieandpeter2026@gmail.com">sophieandpeter2026@gmail.com</a></p>
-        <p>Please enter the password provided at the bottom of your invitation.</p>
-        <div id="password-section">
-        <input
-            type="password"
-            id="form-password"
-            placeholder="Enter Password"
-        >
-        <button type="button" onclick="showRSVPForm()">
-            Submit
-        </button>
-
-        <p id="password-error" style="color:red;"></p>
-    </div>
-
-    <div id="form-container"></div>
+        <div id="form-container"></div>
     </section>
 
     <script>
