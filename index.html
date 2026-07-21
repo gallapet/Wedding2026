@@ -17,339 +17,339 @@
     <script src="scripts/script.js" defer></script>
 </head>
 
-<body>
+<body class="locked">
 
-    <body class="locked">
+    <div id="guest-login" class="guest-login">
+        <div class="guest-login-card">
+            <h2>Welcome</h2>
+            <p>Please enter the password shown on your invitation.</p>
 
-        <div id="guest-login" class="guest-login">
-            <div class="guest-login-card">
-                <h2>Welcome</h2>
-                <p>Please enter the password shown on your invitation.</p>
+            <input type="password" id="guest-password" placeholder="Enter password" autocomplete="off">
 
-                <input type="password" id="guest-password" placeholder="Enter password" autocomplete="off">
+            <button type="button" id="guest-login-button">
+                Enter Website
+            </button>
 
-                <button type="button" id="guest-login-button">
-                    Enter Website
-                </button>
-
-                <p id="guest-password-error" class="password-error"></p>
-            </div>
+            <p id="guest-password-error" class="password-error"></p>
         </div>
+    </div>
 
-        <div id="website-content" hidden>
-            <header class="hero">
-                <div class="hero-text">
-                    <div class="hero-top">
-                        <h1>We're Getting Married!</h1>
-                    </div>
-                    <div class="hero-bottom">
-                        <h2>Sophie and Peter</h2>
-                        <h3>01/10/2026</h3>
-                    </div>
+    <div id="website-content" hidden>
+        <header class="hero">
+            <div class="hero-text">
+                <div class="hero-top">
+                    <h1>We're Getting Married!</h1>
                 </div>
-            </header>
-
-            <nav class="links">
-                <a href="#about">Home</a>
-                <a href="#about">Our Story</a>
-                <a href="#order">Order of the Day</a>
-                <a href="#venue">Venues</a>
-                <a href="#registry">Registry</a>
-                <a href="#rsvp">RSVP</a>
-                <a href="#faq">FAQs</a>
-            </nav>
-
-            <section id="about" class="about-container">
-                <div class="about-text">
-                    <h2>Our Story</h2>
-                    <p>
-                        Our story began long before either of us realised. As young children, we met at church,
-                        never imagining that years later our paths would cross again in the most unexpected way.
-                    </p>
-                    <p>
-                        Fast forward to adulthood, when Peter decided to take a chance and slid into Sophie’s DMs.
-                        What started as a simple message quickly turned into something special.
-                        We went on our first date the day before Peter flew to Italy for two weeks on holiday.
-                        Most people would have expected the timing to fizzle out the spark, but if anything, it only
-                        made us
-                        realise how excited we were to see each other again.
-                    </p>
-                    <p>
-                        From that moment on, we’ve been inseparable, making memories, sharing adventures, and building a
-                        life
-                        together.
-                    </p>
-                    <p>
-                        One of our favourite places has always been Lochgoilhead, where we enjoyed our first day trip
-                        together.
-                        It became even more special when Peter got down on one knee and asked Sophie to marry him in the
-                        very
-                        same place.
-                    </p>
-                    <p>
-                        Now, we’re so excited to celebrate the next chapter of our story with all of the people we love
-                        most.
-                        Thank you for being part of our journey — we can’t wait to celebrate with you!
-                    </p>
+                <div class="hero-bottom">
+                    <h2>Sophie and Peter</h2>
+                    <h3>01/10/2026</h3>
                 </div>
-                <div class="about-image">
-                    <img src="images/our_story.jpg" alt="Sophie and Peter at Rest and Be Thankful" />
-                </div>
-            </section>
+            </div>
+        </header>
 
-            <section id="order" class="order-container reverse">
-                <div class="order-text">
-                    <h2>Order of the Day</h2>
-                    <h3>13:00</h3>
-                    <p>Arrive at Wedding Ceremony</p>
-                    <h3>13:30</h3>
-                    <p>Bride Arrival</p>
-                    <div class="day-guest-info">
-                        <h3>15:30</h3>
-                        <p>Drinks Reception/Photos</p>
-                        <h3>17:30</h3>
-                        <p>Wedding Breakfast</p>
-                    </div>
-                    <h3>19:30</h3>
-                    <p>Evening Reception</p>
-                    <h3>22:00</h3>
-                    <p>Evening Buffet</p>
-                    <h3>00:00</h3>
-                    <p>Carriages</p>
-                </div>
-                <div class="order-image">
-                    <img src="images/order_of_the_day.jpg" alt="Sophie and Peter in front of Crossbasket Castle" />
-                </div>
-            </section>
+        <nav class="links">
+            <a href="#about">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#order">Order of the Day</a>
+            <a href="#venue">Venues</a>
+            <a href="#registry">Registry</a>
+            <a href="#rsvp">RSVP</a>
+            <a href="#faq">FAQs</a>
+        </nav>
 
-            <section id="venue" class="venue-container">
-                <div class="venue-text">
-                    <div class="venue-card">
-                        <h2>Venues</h2>
-                        <h3>The Ceremony</h3>
-                        <p>Queen's Park Baptist Church, 20 Balvicar Drive, G42 8QS</p>
-                        <details>
-                            <summary>Directions</summary>
-                            <div class="directions-content">
-                                <p>Queen's Park Baptist Church is located on Glasgow's south side, right next to Queen's
-                                    Park.
-                                </p>
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.6174487161015!2d-4.272861923113287!3d55.8345990231146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846f40490fcaf%3A0x64b5b0d61c45b457!2sQueen%E2%80%99s%20Park%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1781603361371!5m2!1sen!2suk"
-                                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <p>
-                                    <a href="https://maps.app.goo.gl/ZcSbMLYhwY4S6o4R9" target="_blank">
-                                        Open in Google Maps
-                                    </a>
-                                </p>
-                            </div>
-                        </details>
-                    </div>
-                    <div class="venue-card">
-                        <h3>The Reception</h3>
-                        <p>Crossbasket Castle, Stoneymeadow Road, G72 9UE</p>
-                        <details>
-                            <summary>Directions</summary>
-                            <div class="directions-content">
-                                <p>Crossbasket Castle is approximately 25 minutes from Glasgow city centre.</p>
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.5714971999755!2d-4.1355626285076355!3d55.78331368817543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888407134657b59%3A0xb7ec8212dfd50456!2sCrossbasket%20Castle%2C%20Stoneymeadow%20Rd%2C%20East%20Kilbride%2C%20Glasgow%20G72%209UE!5e0!3m2!1sen!2suk!4v1781603435917!5m2!1sen!2suk"
-                                    width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <p>
-                                    <a href="https://maps.app.goo.gl/3fHRNoUrYGM2vCpt5" target="_blank">
-                                        Open in Google Maps
-                                    </a>
-                                </p>
-                            </div>
-                        </details>
-                    </div>
-
-                </div>
-
-                <div class="venue-image">
-                    <img src="images/ceremony_location.webp" alt="Queen's Park Baptist Church" />
-                    <img src="images/reception_location.webp" alt="Crossbasket Castle" />
-                </div>
-            </section>
-
-            <section id="registry" class="registry-container">
-                <h2>Wedding Registry</h2>
-                <p>We're so excited to celebrate our wedding with the people we love most.</p>
-                <p>If you were thinking of giving us a gift, we've decided not to have a traditional registry. Instead,
-                    we're saving towards our honeymoon and our first home,
-                    and any contribution towards those dreams would mean so much to us.</p>
-                <p>Every gift, no matter the size, will help us create wonderful memories and build our life together.
+        <section id="about" class="about-container">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>
+                    Our story began long before either of us realised. As young children, we met at church,
+                    never imagining that years later our paths would cross again in the most unexpected way.
                 </p>
-                <div class="bank-details">
-                    <h3>Bank Transfer Details</h3>
-                    <div class="detail">
-                        <span>Account Name</span>
-                        <strong>Peter & Sophie Gallacher</strong>
-                    </div>
-                    <div class="detail">
-                        <span>Sort Code</span>
-                        <strong>04-00-05</strong>
-                    </div>
-                    <div class="detail">
-                        <span>Account Number</span>
-                        <strong>39185524</strong>
-                    </div>
-                    <div class="detail">
-                        <span>Reference</span>
-                        <strong>Your Name</strong>
-                    </div>
-                </div>
-            </section>
-
-            <section id="rsvp">
-                <h2>RSVP</h2>
-                <p>Please RSVP by <strong>17/08/2026</strong></p>
-                <p>If you have any issues with this form please contact us at <a
-                        href="mailto:sophieandpeter2026@gmail.com">sophieandpeter2026@gmail.com</a></p>
-                <div id="form-container"></div>
-            </section>
-
-            <section id="faq" class="faq-container">
-                <h2>Frequently Asked Questions</h2>
-
-                <p class="faq-intro">
-                    We’ve answered some of the questions you may have about our wedding day.
-                    If there’s anything else you’d like to know, please get in touch with us at <a
-                        href="mailto:sophieandpeter2026@gmail.com">sophieandpeter2026@gmail.com</a>.
+                <p>
+                    Fast forward to adulthood, when Peter decided to take a chance and slid into Sophie’s DMs.
+                    What started as a simple message quickly turned into something special.
+                    We went on our first date the day before Peter flew to Italy for two weeks on holiday.
+                    Most people would have expected the timing to fizzle out the spark, but if anything, it only
+                    made us
+                    realise how excited we were to see each other again.
                 </p>
+                <p>
+                    From that moment on, we’ve been inseparable, making memories, sharing adventures, and building a
+                    life
+                    together.
+                </p>
+                <p>
+                    One of our favourite places has always been Lochgoilhead, where we enjoyed our first day trip
+                    together.
+                    It became even more special when Peter got down on one knee and asked Sophie to marry him in the
+                    very
+                    same place.
+                </p>
+                <p>
+                    Now, we’re so excited to celebrate the next chapter of our story with all of the people we love
+                    most.
+                    Thank you for being part of our journey — we can’t wait to celebrate with you!
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/our_story.jpg" alt="Sophie and Peter at Rest and Be Thankful" />
+            </div>
+        </section>
 
-                <div class="faq-list">
-                    <details class="faq-item">
-                        <summary>What time should I arrive?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                We recommend arriving at Queen’s Park Baptist Church around
-                                30 minutes before the ceremony to allow plenty of time to
-                                find a seat.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Where should I park?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                There is on-street parking available near the church, and we recommend allowing
-                                extra time to find a space. Parking is available at
-                                Crossbasket Castle for the reception.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>How do I travel between the venues?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                Guests should make their own way from Queen’s Park Baptist
-                                Church to Crossbasket Castle. Further travel information can
-                                be found in the venue section of the website.
-                            </p>
-                        </div>
-                    </details>
-
-                     <details class="faq-item">
-                        <summary>Can I stay overnight at Crossbasket Castle?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                There are a limited number of rooms available on-site at Crossbasket Castle Hotel.
-                                If you would like to book a room, please use code <strong>WEDGST</strong> to get a discounted rate on a standard room.
-                                Rooms can be booked by visiting <a href="https://www.crossbasketcastle.com/">https://www.crossbasketcastle.com/</a>.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Are children invited?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                Unless a child is named on your invitation, our wedding will
-                                be an adults-only celebration.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>What if I have dietary requirements?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                Please include any allergies or dietary requirements when
-                                completing your RSVP, and we’ll pass the information on to
-                                the venue.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Can I take photographs?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                We’d kindly ask that phones and cameras are put away during
-                                the ceremony. You’re very welcome to take photographs during
-                                the reception and evening celebration.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>What time should evening guests arrive?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                Evening guests should arrive at Crossbasket Castle from
-                                <strong>7:30pm</strong>.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>What time does the wedding finish?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                The evening reception is expected to finish at
-                                <strong>midnight</strong>. Please arrange taxis or transport
-                                in advance where possible.
-                            </p>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>Do you have a wedding registry?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                Rather than a traditional registry, we’re saving towards our
-                                honeymoon and our first home. You can find more information
-                                in the wedding registry section of the website.
-                            </p>
-
-                            <a class="faq-link" href="#registry">
-                                View our wedding registry
-                            </a>
-                        </div>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>What if I can no longer attend?</summary>
-                        <div class="faq-answer">
-                            <p>
-                                Please let us know as soon as possible if your plans change
-                                and you’re no longer able to attend.
-                            </p>
-                        </div>
-                    </details>
-
-                    
+        <section id="order" class="order-container reverse">
+            <div class="order-text">
+                <h2>Order of the Day</h2>
+                <h3>13:00</h3>
+                <p>Arrive at Wedding Ceremony</p>
+                <h3>13:30</h3>
+                <p>Bride Arrival</p>
+                <div class="day-guest-info">
+                    <h3>15:30</h3>
+                    <p>Drinks Reception/Photos</p>
+                    <h3>17:30</h3>
+                    <p>Wedding Breakfast</p>
                 </div>
-            </section>
+                <h3>19:30</h3>
+                <p>Evening Reception</p>
+                <h3>22:00</h3>
+                <p>Evening Buffet</p>
+                <h3>00:00</h3>
+                <p>Carriages</p>
+            </div>
+            <div class="order-image">
+                <img src="images/order_of_the_day.jpg" alt="Sophie and Peter in front of Crossbasket Castle" />
+            </div>
+        </section>
 
-            <footer>
-                <p>Website by Peter Gallacher. If you don't like it, blame Sophie</p>
-            </footer>
-    </body>
+        <section id="venue" class="venue-container">
+            <div class="venue-text">
+                <div class="venue-card">
+                    <h2>Venues</h2>
+                    <h3>The Ceremony</h3>
+                    <p>Queen's Park Baptist Church, 20 Balvicar Drive, G42 8QS</p>
+                    <details>
+                        <summary>Directions</summary>
+                        <div class="directions-content">
+                            <p>Queen's Park Baptist Church is located on Glasgow's south side, right next to Queen's
+                                Park.
+                            </p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2240.6174487161015!2d-4.272861923113287!3d55.8345990231146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846f40490fcaf%3A0x64b5b0d61c45b457!2sQueen%E2%80%99s%20Park%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1781603361371!5m2!1sen!2suk"
+                                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <p>
+                                <a href="https://maps.app.goo.gl/ZcSbMLYhwY4S6o4R9" target="_blank">
+                                    Open in Google Maps
+                                </a>
+                            </p>
+                        </div>
+                    </details>
+                </div>
+                <div class="venue-card">
+                    <h3>The Reception</h3>
+                    <p>Crossbasket Castle, Stoneymeadow Road, G72 9UE</p>
+                    <details>
+                        <summary>Directions</summary>
+                        <div class="directions-content">
+                            <p>Crossbasket Castle is approximately 25 minutes from Glasgow city centre, and approximately 20 minutes from Queen's Park Baptist Church.</p>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.5714971999755!2d-4.1355626285076355!3d55.78331368817543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888407134657b59%3A0xb7ec8212dfd50456!2sCrossbasket%20Castle%2C%20Stoneymeadow%20Rd%2C%20East%20Kilbride%2C%20Glasgow%20G72%209UE!5e0!3m2!1sen!2suk!4v1781603435917!5m2!1sen!2suk"
+                                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <p>
+                                <a href="https://maps.app.goo.gl/3fHRNoUrYGM2vCpt5" target="_blank">
+                                    Open in Google Maps
+                                </a>
+                            </p>
+                        </div>
+                    </details>
+                </div>
+
+            </div>
+
+            <div class="venue-image">
+                <img src="images/ceremony_location.webp" alt="Queen's Park Baptist Church" />
+                <img src="images/reception_location.webp" alt="Crossbasket Castle" />
+            </div>
+        </section>
+
+        <section id="registry" class="registry-container">
+            <h2>Wedding Registry</h2>
+            <p>We're so excited to celebrate our wedding with the people we love.</p>
+            <p>If you were thinking of giving us a gift, we've decided not to have a traditional registry. Instead,
+                we're saving towards our honeymoon and our first home,
+                and any contribution towards those dreams would mean so much to us.</p>
+            <p>Every gift, no matter the size, will help us create wonderful memories and build our life together.
+            </p>
+            <div class="bank-details">
+                <h3>Bank Transfer Details</h3>
+                <div class="detail">
+                    <span>Account Name</span>
+                    <strong>Peter & Sophie Gallacher</strong>
+                </div>
+                <div class="detail">
+                    <span>Sort Code</span>
+                    <strong>04-00-05</strong>
+                </div>
+                <div class="detail">
+                    <span>Account Number</span>
+                    <strong>39185524</strong>
+                </div>
+                <div class="detail">
+                    <span>Reference</span>
+                    <strong>Your Name</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp">
+            <h2>RSVP</h2>
+            <p>Please RSVP by <strong>17/08/2026</strong></p>
+            <p>If you have any issues with this form please contact us at <a
+                    href="mailto:sophieandpeter2026@gmail.com">sophieandpeter2026@gmail.com</a></p>
+            <div id="form-container"></div>
+        </section>
+
+        <section id="faq" class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+
+            <p class="faq-intro">
+                We’ve answered some of the questions you may have about our wedding day.
+                If there’s anything else you’d like to know, please get in touch with us at <a
+                    href="mailto:sophieandpeter2026@gmail.com">sophieandpeter2026@gmail.com</a>.
+            </p>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>What time should I arrive?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            We recommend arriving at Queen’s Park Baptist Church around
+                            30 minutes before the ceremony to allow plenty of time to
+                            find a seat.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Where should I park?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            There is on-street parking available near the church, and we recommend allowing
+                            extra time to find a space. Parking is available at
+                            Crossbasket Castle for the reception.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I travel between the venues?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            Guests should make their own way from Queen’s Park Baptist
+                            Church to Crossbasket Castle. Further travel information can
+                            be found in the venue section of the website.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I stay overnight at Crossbasket Castle?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            There are a limited number of rooms available on-site at Crossbasket Castle Hotel.
+                            If you would like to book a room, please use code <strong>WEDGST</strong> to get a
+                            discounted rate on a standard room.
+                            Rooms can be booked by visiting <a
+                                href="https://www.crossbasketcastle.com/">https://www.crossbasketcastle.com/</a>.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Are children invited?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            Unless a child is named on your invitation, our wedding will
+                            be an adults-only celebration.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What if I have dietary requirements?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            Please include any allergies or dietary requirements when
+                            completing your RSVP, and we’ll pass the information on to
+                            the venue.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I take photographs?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            We’d kindly ask that phones and cameras are put away during
+                            the ceremony. You’re very welcome to take photographs during
+                            the reception and evening celebration.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What time should evening guests arrive?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            Evening guests should arrive at Crossbasket Castle from
+                            <strong>7:30pm</strong>.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What time does the wedding finish?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            The evening reception is expected to finish at
+                            <strong>midnight</strong>. Please arrange taxis or transport
+                            in advance where possible.
+                        </p>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Do you have a wedding registry?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            Rather than a traditional registry, we’re saving towards our
+                            honeymoon and our first home. You can find more information
+                            in the wedding registry section of the website.
+                        </p>
+
+                        <a class="faq-link" href="#registry">
+                            View our wedding registry
+                        </a>
+                    </div>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What if I can no longer attend?</summary>
+                    <div class="faq-answer">
+                        <p>
+                            Please let us know as soon as possible if your plans change
+                            and you’re no longer able to attend.
+                        </p>
+                    </div>
+                </details>
+
+
+            </div>
+        </section>
+
+        <footer>
+            <p>Website by Peter Gallacher. If you don't like it, blame Sophie</p>
+        </footer>
+</body>
 
 </html>
